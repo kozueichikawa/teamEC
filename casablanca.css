@@ -1,0 +1,393 @@
+@charset "UTF-8";
+
+body,html{
+	font-family:Meiryo,sans-serif;
+	margin:0;
+	padding:0;
+
+}
+
+/*各ページのタイトルです*/
+.title{
+	border-left:10px solid #A4A4A4;
+	padding-left:20px;
+	margin-left:100px;
+	margin-bottom:15px;
+	font-size:1.5em;
+	position-relative;
+	font-weight:normal;
+}
+
+/*=======全ページ共通========*/
+.contents{
+	margin-top:150px;
+	margin-bottom:100px;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+
+/*==========ヘッダー==========*/
+
+#top{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	min-width:1000px;
+	height:100px;
+	margin:0 auto;
+	letter-spacing:1px;
+	background-color:#00b8a9;
+	color:#ffc0c2;
+
+}
+
+#logo{
+	float : left;
+	margin-left:250px;
+	margin-top:20px;
+	color:ffc0c2;
+	font-size:30px;
+}
+
+ul{
+	list-style-type:none;
+	margin-top:1.5em;
+	margin-right:200px;
+	min-width:1000px;
+}
+
+ul li{
+	float:right;
+	margin-top:10px;
+	margin-right:45px;
+	box-sizing:border-box;
+	font-size:17px;
+	color:ffc0c2;
+    max-width: 60%;
+    height: auto;
+	cursor: pointer;
+}
+
+#top span{
+	margin-right:10px;
+}
+
+
+
+#search{
+	clear:both;
+	position:absolute;
+	top:80px;
+	left:0;
+	width:100%;
+	min-width:1000px;
+	height:50px;
+	text-align:center;
+	margin-top:10px;
+    vertical-align: top;
+    margin: 0 auto;
+    height: 50px;
+    box-sizing: border-box;
+	background-color:#00b8a9;
+}
+.slct{
+	outline: 0;
+	height:32px;
+	padding-left:4px;
+	font-size: 93%;
+	border-radius: 4px 0 0 4px;
+	border: none;
+	background-color: #f5f5c6;
+	border-right:1px solid #D8D7D2;
+	font-family:Meiryo,sans-serif;
+
+}
+.slct:after {
+	content: "▼";
+}
+.slct_key{
+	height:30px;
+	width:63%;
+	outline:0;
+	margin-left:-8px;
+	border:none;
+	}
+
+.submit_key{
+	position:absolute;
+	margin-right:20px;
+	height:32px;
+	border: none;
+	border-radius: 0 4px 4px 0;
+	cursor:pointer;
+	background-color:#ffc0c2;
+}
+
+.glass{
+	font-size:1.4em;
+}
+
+i{
+	padding-right:8px;
+}
+
+
+a{
+	font-weight:normal;
+}
+
+a:link{
+	color:white;
+	text-decoration:none;
+}
+a:visited{
+	color:white;
+}
+
+/*==========ホーム画面===========*/
+#home{
+	text-align:center;
+	color:black;
+	font-size:2em;
+	font-family:Meiryo;
+	margin:0px;
+	padding:0px;
+
+}
+
+/*==========フッター==========*/
+#footer{
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:60px;
+	font-size:25px;
+	letter-spacing:1px;
+	line-height:2.5em;
+	color:white;
+	background-color:#00b8a9;
+	text-align:center;
+
+}
+/*=======商品詳細とマイページのテーブルデザイン=========*/
+table.vertical-list-table{
+
+
+	border-collapse: separate;
+
+	border-spacing:0px 15px;
+}
+table.vertical-list-table th,
+table.vertical-list-table td{
+	padding:5px;
+}
+
+table.vertical-list-table th{
+background-color: #A4A4A4;
+vertical-align:left;
+width:45%;
+overflow:visible;
+position:relative;
+color:black;
+font-weight:normal;
+}
+table.vertical-list-table th:after{
+left:100%;
+top:50%;
+border:solid transparent;
+content:"";
+height:0;
+width:0;
+position:absolute;
+pointer-events:none;
+border-color:rgba(255, 239, 204, 0);
+border-left-color:#A4A4A4;
+border-width:10px;
+margin-top:-10px;
+}
+table.vertical-list-table td{
+background:#E6E6E6;
+width:65%;
+padding-left:20px;
+}
+
+/*===========エラーページ===========*/
+
+.error{
+	text-align: center;
+	border-radius:40px 0px;
+	background-color: #F2F2F2;
+	width:800px;
+	height:200px;
+	padding-top:100px;
+	margin-top:200px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*========エラーメッセージ========*/
+.error-message{
+text-align: center;
+font-family: Impact,Charcoal;
+line-height: 25px;
+margin-bottom: 10px;
+color: red;
+}
+
+/*=============青ボタン============*/
+.btn_blue{
+	display:block;
+	width:50%;
+	border-radius:20px;
+	background-color:#0174DF;
+	color:white;
+	height:40px;
+	font-size:20px;
+	margin-top:20px;
+	line-height:10px;
+	margin:40px 30px;
+	margin-left:auto;
+	margin-right:auto;
+	cursor: pointer;
+}
+.btn_blue:hover{
+		background:#5882FA;
+		color:white;
+		border:solid lightblue 2px;
+		}
+/*=============赤ボタン=============*/
+.btn_red{
+	display:block;
+	width:50%;
+	border-radius:20px;
+	background-color:#d9534f;
+	color:white;
+	height:40px;
+	font-size:20px;
+	margin-top:40px;
+	margin:0 auto;
+	line-height:10px;
+	cursor: pointer;
+}
+.btn_red:hover{
+		background:#F78181;
+		color:white;
+		border:solid #F5A9A9 2px;
+		}
+/*============灰色ボタン=============*/
+.btn_gray{
+	display:block;
+	width:50%;
+	border-radius:20px;
+	background-color:#808080;
+	color:white;
+	height:40px;
+	font-size:20px;
+	margin-top:40px;
+	margin:0 auto;
+	line-height:10px;
+	cursor: pointer;
+
+}
+.btn_gray:hover{
+		background:#A4A4A4;
+		color:white;
+		border:solid lightgray 2px;
+		}
+/*========完了画面========*/
+.complete{
+	text-align: center;
+	background-color: #F2F2F2;
+	border-radius: 40px;
+	width: auto;
+	height: auto;
+	margin: 50px;
+	padding: 35px;
+}
+
+
+/* createUser,createDestinationJSP*/
+	.input_create{
+		width:60%;
+		background:lightgray;
+		border-radius:10px;
+		margin:0 auto;
+		padding:5% 0 1% 0;
+		}
+	.form_box{
+		text-align:center;
+
+		}
+	.form_sex{
+		margin-left:15%;
+
+		}
+	.sex_list{
+		margin:1% 0;}
+	.form_label{
+		margin-left:15%;
+		margin-top:15px;
+		}
+	.required{
+		margin-left:1%;
+		color:white;
+		background:red;
+		border-radius:20px;
+		font-size:10px;
+		border:solid red;
+		margin-top:-1px;
+		}
+	.txt{
+		border-radius:50px;
+		width:70%;
+		height:30px;
+		box-shadow:0px 0px 10px #0066FF;
+		text-indent:1em;
+		margin-top:0.1%;
+		}
+
+/* login.jsp */
+		.title_top_margin{
+		border-left:10px solid #A4A4A4;
+		font-size:1.5em;
+		position-relative;
+		font-weight:normal;
+		}
+	.input_login{
+		width:80%;
+		background:lightgray;
+		border-radius:10px;
+		margin:0 auto 5%;
+		padding:5% 0 1% 0;
+		}
+	.form_label_loginID{
+		margin-left:15%;
+		}
+	.loginIdMargin{
+		margin-bottom:2%;
+		}
+	.form_box_loginID{
+		text-align:center;
+		margin-bottom:2%;
+		}
+	.form_box_password{
+		text-align:center;
+		margin-bottom:2%;
+		}
+	.space{
+		padding-left:65%;
+		}
+	.resetPass_btn{
+		background:lightgray;
+		border:none;
+		cursor:pointer;
+		color:blue;
+		}
+		.resetPass_btn a{
+		color:blue;
+		}
+

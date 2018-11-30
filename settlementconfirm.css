@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+/* ============== SettlemenConfirmここから ========= */
+/*お届先情報*/
+#confirm{
+margin : 2% auto 10%;
+width: 60%;
+border: solid 2px #6e6e6e;
+margin-bottom: 40px;
+border-radius: 10px;
+padding: 15px;
+text-align: center;
+background-color: #fafafa;
+line-height:1.8;
+}
+table{
+width:100%;
+text-align:center;
+}
+/*お届先情報内の項目*/
+td{
+display: inline-block;
+width: 75%;
+text-align: center;
+border-left: solid 2px #6e6e6e;
+border-radius: 2px;
+overflow-wrap:break-word;
+padding-left:30px;
+}
+th{
+vertical-align:left;
+width:25%;
+overflow:visible;
+text-align:center;
+}
+tr{
+width:20%;
+text-align:center;
+padding-top:5px;
+padding-bottom:5px;
+}
+/* お届先情報ラジオボタン間隔調整 */
+#button{
+margin :auto 20%;
+}
+.info{
+text-align:center;
+font-family:Meiryo,sans-serif;
+margin-top:80px;
+margin-bottom:50px;
+}
